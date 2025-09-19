@@ -43,7 +43,4 @@ def analyze_sentiment(transcript: str) -> str:
         
     else:
         raise Exception(f"Error: {response.status_code}, {response.text}")
-
-if __name__ == "__main__":
-    print("summary:", Summarize_transcript("Hello, I need help with my order. It hasn't arrived yet and I'm quite frustrated."))
-    print("sentiment:", analyze_sentiment("Hello, I need help with my order. It hasn't arrived yet and I'm quite frustrated."))
+        
